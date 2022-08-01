@@ -29,25 +29,68 @@
                 <input type="checkbox" class="menu-btn" id="menu-btn">
                 <label for="menu-btn"><i class="fa-solid fa-bars paddingLR"></i></label>
                 <div class="menu-box">
-                    <a href="#home">Home</a>
-                    <a href="features.html">Our Features</a>
-                    <a href="aboutus.html">About Us</a>
+
+                    <div class="menubg">
+                        <a href="#home">Home</a>
+                        <a href="#features">Features</a>
+                        <a href="#aboutus">About Us</a>
+                    </div>
+                    <span class="close">x</span>
                 </div>
+            </div>
+            <div class="desktopmenu">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#aboutus">About Us</a>
             </div>
         </nav>
         <div class="home" id="home">
             <div class="home-body">
+                <div class="homeleft">
+                    <div class="text paddingLR">
+                        <div>Meet Artist Land, </div>
+                        <div>An amazing product</div>
+                    </div>
+                    <div class="para paddingLR">
+                        Our app will help you find your desired artist and provide a great user experience. You can find the artist through search bar. Before you contact the artist, you might have an account for our app. You can also add your banking accounts so that you can
+                        pay the artist online.
+                    </div>
+                    <div class="button">
+                        <button class="btn-explore paddingLR">EXPLORE OUR FEATURES</button>
+                        <button class="btn-download paddingLR">DOWNLOAD THE APP</button>
+                    </div>
+                </div>
+                <div class="homeright">
+                    <img src="./image/phonemockup.png" alt="" class="desktop-mockup">
+                </div>
+            </div>
+            <div class="featuresWrapper" id="features">
                 <div class="text paddingLR">
-                    <div>Meet Artist Land, </div>
-                    <div>An amazing</div>
-                    <div>product</div>
+                    Our Awesome Features
                 </div>
-                <div class="para paddingLR">
-                    Our app will help you find your desired artist and provide a great user experience. You can find the artist through search bar. Before you contact the artist, you might have an account for our app. You can also add your banking accounts so that you can
-                    pay the artist online.
+                <div class="features">
+                    <img src="./image/features.png" alt="" class="featureImg">
+                    <div class="para">
+                        <div>Communication</div>
+                        <div>Inspired Design</div>
+                        <div>Happy Customers</div>
+                    </div>
                 </div>
-                <button class="btn-explore paddingLR">EXPLORE OUR FEATURES</button>
-                <button class="btn-download paddingLR">DOWNLOAD THE APP</button>
+
+            </div>
+            <div class="aboutusWrapper" id="aboutus">
+                <div class="text paddingLR">
+                    About Us
+                </div>
+                <div class="aboutus">
+                    <img src="./image/undraw_team_page_re_cffb.svg" alt="" class="aboutusImg">
+                    <div class="para paddingLR">
+                        We are a team who want to help connecting between artists and customers. So, we design this app mainly for freelance digital artist who are searching for customers and vice versa. We hope that we can help you to find your desired artist through this app
+                        and find your customers who are willing to pay for your worthy arts. We welcome any feedbacks.
+
+                    </div>
+                </div>
+
             </div>
             <div class="footerWrapper">
                 <img src="./image/phonemockup.png" alt="" class="mockup">
@@ -66,5 +109,17 @@
     </div>
 
 </body>
+
+<script>
+    var closebtns = document.getElementsByClassName("close");
+    var i;
+
+    // Loop through the elements, and hide the parent, when clicked on
+    for (i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+        });
+    }
+</script>
 
 </html>
