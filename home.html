@@ -2,98 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artist Land</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-
     <div class="wrapper">
         <nav class="navbar">
             <div class="navleft paddingLR">
-                <img src="./image/logo.png" alt="">
+                <img src="./image/logo.png" alt="" />
                 <a href=""> Artist Land </a>
             </div>
-            <div class="menuWrapper">
-                <input type="checkbox" class="menu-btn" id="menu-btn">
-                <label for="menu-btn"><i class="fa-solid fa-bars paddingLR"></i></label>
-                <div class="menu-box">
-
-                    <div class="menubg">
-                        <a href="#home">Home</a>
-                        <a href="#features">Features</a>
-                        <a href="#aboutus">About Us</a>
-                    </div>
-                    <span class="close">x</span>
+            <input type="checkbox" class="menu-btn" id="menu-btn" />
+            <label for="menu-btn" class="menu-btn-label">
+          <i class="fa-solid fa-bars paddingLR openBtn"></i>
+          <i class="fa-solid fa-xmark paddingLR closeBtn"></i>
+        </label>
+            <div class="menubg">
+                <div class="menuBox">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#aboutus">About Us</a>
+                    <a href="#testimonials">Testimonials</a>
                 </div>
             </div>
             <div class="desktopmenu">
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
                 <a href="#aboutus">About Us</a>
+                <a href="#testimonials">Testimonials</a>
             </div>
         </nav>
         <div class="home" id="home">
             <div class="home-body">
                 <div class="homeleft">
-                    <div class="text paddingLR">
-                        <div>Meet Artist Land, </div>
+                    <div class="title paddingLR">
+                        <div>Meet Artist Land,</div>
                         <div>An amazing product</div>
                     </div>
                     <div class="para paddingLR">
-                        Our app will help you find your desired artist and provide a great user experience. You can find the artist through search bar. Before you contact the artist, you might have an account for our app. You can also add your banking accounts so that you can
-                        pay the artist online.
+                        Our app will help you find your desired artist and provide a great user experience.
                     </div>
-                    <div class="button">
-                        <button class="btn-explore paddingLR">EXPLORE OUR FEATURES</button>
-                        <button class="btn-download paddingLR">DOWNLOAD THE APP</button>
+                    <div class="mockup">
+                        <img src="./image/phonemockup.png" alt="" class="mockupImg" />
+                    </div>
+                    <div class="homeBtnGroup">
+                        <button class="btn-explore paddingLR"> <a href="#features">EXPLORE OUR FEATURES</a>
+        
+              </button>
+                        <button class="btn-download paddingLR"> <a href="#download">DOWNLOAD THE APP</a> </button>
                     </div>
                 </div>
                 <div class="homeright">
-                    <img src="./image/phonemockup.png" alt="" class="desktop-mockup">
+                    <img src="./image/phonemockupweb.png" alt="" class="desktop-mockup" />
                 </div>
             </div>
+            <div class="divider desktop-divider"></div>
             <div class="featuresWrapper" id="features">
-                <div class="text paddingLR">
-                    Our Awesome Features
-                </div>
+                <div class="title paddingLR">Our Features</div>
                 <div class="features">
-                    <img src="./image/features.png" alt="" class="featureImg">
-                    <div class="para">
-                        <div>Communication</div>
-                        <div>Inspired Design</div>
-                        <div>Happy Customers</div>
+                    <img src="./image/features.png" alt="" class="featureImg" />
+                    <div class="para featuresText">
+                        <div class="feature">
+                            <i class="fa-solid fa-check-circle"></i>Communication
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-check-circle"></i>Inspired Design
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-check-circle"></i>Happy Customers
+                        </div>
                     </div>
                 </div>
-
             </div>
+            <div class="divider"></div>
             <div class="aboutusWrapper" id="aboutus">
-                <div class="text paddingLR">
-                    About Us
-                </div>
+                <div class="title paddingLR">About Us</div>
                 <div class="aboutus">
-                    <img src="./image/undraw_team_page_re_cffb.svg" alt="" class="aboutusImg">
+                    <img src="./image/undraw_team_page_re_cffb.svg" alt="" class="aboutusImg" />
                     <div class="para paddingLR">
                         We are a team who want to help connecting between artists and customers. So, we design this app mainly for freelance digital artist who are searching for customers and vice versa. We hope that we can help you to find your desired artist through this app
                         and find your customers who are willing to pay for your worthy arts. We welcome any feedbacks.
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="testimonials" id="testimonials">
+                <div class="testimonials-section">
+                    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+                    <input type="radio" name="slider" title="slide2" class="slider__nav" />
+                    <input type="radio" name="slider" title="slide3" class="slider__nav" />
+                    <input type="radio" name="slider" title="slide4" class="slider__nav" />
+                    <input type="radio" name="slider" title="slide5" class="slider__nav" />
+                    <div class="slider__inner">
+                        <div class="slider__contents">
+                            <quote>&rdquo;</quote>
+                            <p class="slider__txt">We love you guys. It's easy to contact the artist we would like to work with. </p>
+                            <h2 class="slider__caption">Rhonda | Client </h2>
+                        </div>
+                        <div class="slider__contents">
+                            <quote>&rdquo;</quote>
+                            <p class="slider__txt">It's easy to use for the artists like me. It can help me find client who would appreciate my arts.</p>
+                            <h2 class="slider__caption">Jared | Artist </h2>
+                        </div>
+                        <div class="slider__contents">
+                            <quote>&rdquo;</quote>
+                            <p class="slider__txt">We love you guys. It's easy to contact the artist we would like to work with. </p>
+                            <h2 class="slider__caption">Rhonda | Client </h2>
+                        </div>
+                        <div class="slider__contents">
+                            <quote>&rdquo;</quote>
+                            <p class="slider__txt">It's easy to use for the artists like me. It can help me find client who would appreciate my arts.</p>
+                            <h2 class="slider__caption">Jared | Artist </h2>
+                        </div>
+                        <div class="slider__contents">
+                            <quote>&rdquo;</quote>
+                            <p class="slider__txt">We love you guys. It's easy to contact the artist we would like to work with. </p>
+                            <h2 class="slider__caption">Rhonda | Client </h2>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="downloadWrapper" id="download">
+                    <div class="title paddingLR">Download Our App</div>
+                    <div class="download">
+                        <img src="./image/App installation-bro.svg" alt="" class="downloadImg" />
+
+                        <div class="download-right-group">
+                            <div class="download-text-group">
+                                <i class="fa-solid fa-download"></i>
+                                <a href="">Download it for free!</a>
+                            </div>
+                            <div class="download-btn-group">
+                                <button class="PlayStore">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <a>Play store</a>
+                                </button>
+                                <button class="AppStore">
+                                    <i class="fa-brands fa-app-store-ios"></i>
+                                    <a>App Store</a>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
             <div class="footerWrapper">
-                <img src="./image/phonemockup.png" alt="" class="mockup">
                 <div class="footer footerbox">
                     <div class="footericon">
                         <i class="fa-brands fa-facebook"></i>
@@ -101,25 +168,12 @@
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-youtube"></i>
                     </div>
-                    <div>Terms and Conditions Privacy Policy </div>
-                    <div> Copyright 2022 Artist Land All rights reserved </div>
+                    <div>Terms and Conditions Privacy Policy</div>
+                    <div>Copyright 2022 Artist Land All rights reserved</div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
-
-<script>
-    var closebtns = document.getElementsByClassName("close");
-    var i;
-
-    // Loop through the elements, and hide the parent, when clicked on
-    for (i = 0; i < closebtns.length; i++) {
-        closebtns[i].addEventListener("click", function() {
-            this.parentElement.style.display = 'none';
-        });
-    }
-</script>
 
 </html>
