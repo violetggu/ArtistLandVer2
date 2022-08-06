@@ -107,9 +107,9 @@ button {
 
 .menubg a {
     font-size: 1.2rem;
-    font-family: "Josefin Slab", sans-serif;
-    padding-bottom: 2rem;
-    color: white;
+    font-family: var(--primary-font-family) padding-bottom: 2rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
 }
 
 .desktopmenu {
@@ -119,6 +119,7 @@ button {
 .home {
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 .home-body {
@@ -308,14 +309,14 @@ button {
     font-size: 14px;
     color: var(--text-color);
     opacity: .5;
-    font-family: 'Roboto';
+    font-family: var(--primary-font-family);
     font-weight: bold;
 }
 
 .slider__txt {
     font-size: 22px;
     font-weight: bold;
-    font-family: var(--testimonial-font-family);
+    font-family: var(--primary-font-family);
     line-height: 1.7;
     color: var(--text-color);
     margin-top: -20px;
